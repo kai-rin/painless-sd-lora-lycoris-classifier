@@ -1,11 +1,10 @@
 # Lora Lyco Classifier
 
-日本語の説明は英語の後にあります。
+[日本語の説明](#lora-lyco-分類器)は英語の後にあります。
 
 This Python script classifies "LORA" and "LyCORIS" based on the 'model type' mentioned in `.civitai.info` files present in the same directory as the script.
 
 Use of [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper) is a prerequisite.
-
 
 ## How it works
 
@@ -32,7 +31,6 @@ python3 lora_lyco_classifier.py
 ```
 
 After running the script, the files will be moved to the 'Lora' and 'LyCORIS' directories and a log file named 'lora_lyco_classifier.log' will be created in the same directory.
-
 
 # Lora Lyco 分類器
 
