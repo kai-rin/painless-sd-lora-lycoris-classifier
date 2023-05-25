@@ -48,20 +48,6 @@ def organize_files():
         for file_name in files:
             shutil.move(os.path.join(directory, file_name), os.path.join(lyco_dir, file_name))
 
-    # Generate the output
-    output = 'LORA:\n'
-    for files in lora_files.values():
-        for file_name in sorted(files):
-            output += '\t' + file_name + '\n'
-    output += 'LyCORIS:\n'
-    for files in lyco_files.values():
-        for file_name in sorted(files):
-            output += '\t' + file_name + '\n'
-
-    # Write the output to the file
-    with open('lora_lyco_classifier.log', 'w') as output_file:
-        output_file.write(output)
-
 
 if __name__ == "__main__":
     organize_files()

@@ -20,8 +20,6 @@ The script operates as follows:
 
 4. Moves 'LORA' and 'LyCORIS' files to their respective directories based on 'model type'.
 
-5. Once processing is complete, it generates a log file named 'lora_lyco_classifier.log'.
-
 ## Usage
 
 Simply place `lora_lyco_classifier.py` in a directory that contains `.civitai.info` files and their associated files (`.safetensors` and `.preview.png`).
@@ -46,7 +44,7 @@ or, you can run the script directly:
 .\lora_lyco_classifier.py
 ```
 
-Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories and a log file called 'lora_lyco_classifier.log' is created.
+Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories.
 
 # Lora Lyco 分類器
 
@@ -67,8 +65,6 @@ LORAとLyCORISファイルを別々のフォルダに配置せよと言われ絶
 3. 'LORA' および 'LyCORIS' ディレクトリを作成します。
 
 4. 'model type'に基づき'LOAR', 'LyCORIS'ファイルをそれぞれのディレクトリに移動します。
-
-5. 処理が完了したら、'lora_lyco_classifier.log'という名前のログファイルを生成します。
 
 ## 使い方
 
@@ -94,4 +90,4 @@ py lora_lyco_classifier.py
 .\lora_lyco_classifier.py
 ```
 
-スクリプトを実行すると'Lora'と'LyCORIS'ディレクトリにファイルが移動し、ログファイル'lora_lyco_classifier.log'が作成されます。
+スクリプトを実行すると'Lora'と'LyCORIS'ディレクトリにファイルが移動します。
