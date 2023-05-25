@@ -52,7 +52,7 @@ Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories
 
 LORAとLyCORISファイルを別々のフォルダに配置せよと言われ絶望している全人類に捧ぐ。
 
-`.safetensors`ファイルが"LORA"か"LyCORIS"かを判別し各ディレクトリに移動するというシンプルなスクリプトです。`.civitai.info`から判別しています。
+`.safetensors`ファイルが"LORA"か"LyCORIS"かを判別し各ディレクトリに移動するシンプルなスクリプトです。`.civitai.info`から判別しています。
 
 [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper) の利用を前提にしています。
 
