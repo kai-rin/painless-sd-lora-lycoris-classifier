@@ -4,41 +4,41 @@
 
 Dedicated to all mankind who despair at being told to put LORA and Lycoris files in separate folders.
 
-This Python script classifies "LORA" and "LyCORIS" based on the 'model type' mentioned in `.civitai.info` files present in the same directory as the script.
+This script identifies whether `.safetensors` files are "LORA" or "LyCORIS" based on `.civitai.info` file information and moves them to each respective directory.
 
-Prerequisite: Use of [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper)
+Required: Use of the [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper).
 
-## How it works
+## How it Works
 
-The script operates in the following manner:
+The script operates as follows:
 
-1. It scans all files in its current directory, which is the same directory where the script is located.
+1. Scans all files in the directory where the script exists.
 
-2. The script determines whether the 'model type' in the `.civitai.info` file is 'LORA' or 'LyCORIS'.
+2. Determines from the contents of the `.civitai.info` file whether the 'model type' is either 'LORA' or 'LyCORIS'.
 
-3. The script creates directories named 'LORA' and 'LyCORIS'.
+3. Creates 'LORA' and 'LyCORIS' directories.
 
-4. Based on the 'model type', files are moved to their respective 'LORA' or 'LyCORIS' directory.
+4. Moves 'LORA' and 'LyCORIS' files to their respective directories based on 'model type'.
 
-5. Once the process is completed, the script generates a log file named 'lora_lyco_classifier.log'.
+5. Once processing is complete, it generates a log file named 'lora_lyco_classifier.log'.
 
 ## Usage
 
-To use this script, simply place `lora_lyco_classifier.py` in the directory containing the `.civitai.info` files and other associated files such as `.safetensors` and `.preview.png`.
+Simply place `lora_lyco_classifier.py` in a directory that contains `.civitai.info` files and their associated files (`.safetensors` and `.preview.png`).
 
-Run the script using Python 3. No additional arguments are required:
+Execute the script using Python 3. No additional arguments are required:
 
 ```python
 python3 lora_lyco_classifier.py
 ```
 
-After running the script, the files will be moved to the 'Lora' and 'LyCORIS' directories and a log file named 'lora_lyco_classifier.log' will be created in the same directory.
+Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories and a log file called 'lora_lyco_classifier.log' is created.
 
 # Lora Lyco 分類器
 
 LORAとLyCORISファイルを別々のフォルダに配置せよと言われ絶望している全人類に捧ぐ。
 
-このPythonスクリプトは、スクリプトと同じディレクトリに存在する`.civitai.info`ファイルに記載された'model type'に基づいて"LORA"と"LyCORIS"に分類します。
+このPythonスクリプトは`.civitai.info`ファイル情報から`.safetensors`ファイルが"LORA"か"LyCORIS"かを判別し各ディレクトリに移動します。
 
 [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper) の利用を前提にしています。
 
