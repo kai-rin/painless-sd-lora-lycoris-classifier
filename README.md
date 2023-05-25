@@ -16,7 +16,7 @@ The script operates as follows:
 
 2. Determines from the contents of the `.civitai.info` file whether the 'model type' is either 'LORA' or 'LyCORIS'.
 
-3. Creates 'LORA' and 'LyCORIS' directories.
+3. Creates '_lora' and '_lycoris' directories.
 
 4. Moves 'LORA' and 'LyCORIS' files to their respective directories based on 'model type'.
 
@@ -44,7 +44,7 @@ or, you can run the script directly:
 .\lora_lyco_classifier.py
 ```
 
-Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories.
+Upon running the script, the files are moved to '_lora' and '_lycoris' directories.
 
 # Lora Lyco 分類器
 
@@ -62,7 +62,7 @@ LORAとLyCORISファイルを別々のフォルダに配置せよと言われ絶
 
 2. `.civitai.info`ファイルの内容から'model type'が'LORA'または'LyCORIS'のいずれであるか判別します。
 
-3. 'LORA' および 'LyCORIS' ディレクトリを作成します。
+3. '_lora' および '_lycoris' ディレクトリを作成します。
 
 4. 'model type'に基づき'LOAR', 'LyCORIS'ファイルをそれぞれのディレクトリに移動します。
 
@@ -90,4 +90,4 @@ py lora_lyco_classifier.py
 .\lora_lyco_classifier.py
 ```
 
-スクリプトを実行すると'Lora'と'LyCORIS'ディレクトリにファイルが移動します。
+スクリプトを実行すると'_lora'と'_lycoris'ディレクトリにファイルが移動します。

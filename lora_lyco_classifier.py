@@ -10,8 +10,8 @@ def organize_files():
     lyco_files = {}
 
     # Create directories if they don't exist
-    lora_dir = os.path.join(directory, 'Lora')
-    lyco_dir = os.path.join(directory, 'LyCORIS')
+    lora_dir = os.path.join(directory, '_lora')
+    lyco_dir = os.path.join(directory, '_lycoris')
     os.makedirs(lora_dir, exist_ok=True)
     os.makedirs(lyco_dir, exist_ok=True)
 

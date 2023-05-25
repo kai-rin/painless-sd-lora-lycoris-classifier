@@ -160,8 +160,8 @@ cython_debug/
 #.idea/
 
 # Ignore Lora/Lyroris directory and all subdirectories and files
-Lora/**
-Lycoris/**
+_lora/**
+_lycoris/**
 
 # Ignore macOS .DS_Store files
 .DS_Store
