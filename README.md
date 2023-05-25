@@ -4,7 +4,7 @@
 
 Dedicated to all mankind who despair at being told to put LORA and Lycoris files in separate folders.
 
-This script identifies whether `.safetensors` files are "LORA" or "LyCORIS" based on `.civitai.info` file information and moves them to each respective directory.
+This is a super simple script that determines whether a `.safetensors` file is "LORA" or "LyCORIS" based on `.civitai.info` file information and moves it to the respective directory.
 
 Required: Use of the [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper).
 
@@ -28,8 +28,22 @@ Simply place `lora_lyco_classifier.py` in a directory that contains `.civitai.in
 
 Execute the script using Python 3. No additional arguments are required:
 
-```python
+On macOS and Linux:
+
+```Python
 python3 lora_lyco_classifier.py
+```
+
+On Windows:
+
+```Python
+py lora_lyco_classifier.py
+```
+
+or, you can run the script directly:
+
+```cmd
+.\lora_lyco_classifier.py
 ```
 
 Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories and a log file called 'lora_lyco_classifier.log' is created.
@@ -38,7 +52,7 @@ Upon running the script, the files are moved to 'Lora' and 'LyCORIS' directories
 
 LORAとLyCORISファイルを別々のフォルダに配置せよと言われ絶望している全人類に捧ぐ。
 
-このPythonスクリプトは`.civitai.info`ファイル情報から`.safetensors`ファイルが"LORA"か"LyCORIS"かを判別し各ディレクトリに移動します。
+`.safetensors`ファイルが"LORA"か"LyCORIS"かを判別し各ディレクトリに移動するというシンプルなスクリプトです。`.civitai.info`から判別しています。
 
 [Stable-Diffusion-Webui-Civitai-Helper extension](https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper) の利用を前提にしています。
 
@@ -62,8 +76,22 @@ LORAとLyCORISファイルを別々のフォルダに配置せよと言われ絶
 
 Python 3を使用してスクリプトを実行します。追加の引数は必要ありません：
 
+macOS または Linux:
+
 ```Python
 python3 lora_lyco_classifier.py
 ```
 
-スクリプトを実行すると'Lora'と'LyCORIS'ディレクトリにファイルが移動し、'lora_lyco_classifier.log'というログファイルが作成されます。
+Windows:
+
+```Python
+py lora_lyco_classifier.py
+```
+
+またはスクリプトを直接実行:
+
+```cmd
+.\lora_lyco_classifier.py
+```
+
+スクリプトを実行すると'Lora'と'LyCORIS'ディレクトリにファイルが移動し、ログファイル'lora_lyco_classifier.log'が作成されます。
